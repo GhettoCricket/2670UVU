@@ -11,9 +11,8 @@ public Transform CPosition;
 void Start()
 {
 	CPosition = GetComponent<Transform>();
-	DfltPosition.transform.position = CPosition.transform.position;
+	DfltPosition.position = CPosition.position;
 	MoveInput.Reset += _Reset;
-	
 }
 
 void OnTriggerEnter(Collider Cl)
@@ -24,8 +23,13 @@ void OnTriggerEnter(Collider Cl)
 	}
 }
 public void _Reset()
-{		
-	print("It's Working!");
+{	if(CPosition.position.y < -50)	
+	{
+		Rb.isKinematic = true;
+		CPosition.position = DfltPosition.position;
+ 		print("It's Working!");
+	}
+	
 }
 
 	
