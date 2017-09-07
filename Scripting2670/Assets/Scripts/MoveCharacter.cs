@@ -11,7 +11,7 @@ public class MoveCharacter : MonoBehaviour {
     public float speed = 5;
 	public float gravity;
 	public float jumpHeight = 0.2f;
-	public float jumpCount = 2;
+	public static float jumpCount = 2;
 	public Transform player;
 	public Transform Respawn;
 
@@ -58,7 +58,7 @@ public class MoveCharacter : MonoBehaviour {
 			{
 				if(player.position.y <= -50)
 				{
-				player.transform.position = Respawn.transform.position;
+					player.transform.position = Respawn.transform.position;
 				}
 			}
 }
