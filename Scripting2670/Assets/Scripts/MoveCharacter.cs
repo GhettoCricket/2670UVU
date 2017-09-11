@@ -8,6 +8,9 @@ public class MoveCharacter : MonoBehaviour {
 
 	CharacterController cc;
 	Vector3 tempMove;
+	public Vector3  VCrouch;
+	public Vector3  VStand;
+
     public float speed = 5;
 	public float gravity;
 	public float jumpHeight = 0.2f;
@@ -22,6 +25,8 @@ public class MoveCharacter : MonoBehaviour {
 	void OnPlay (){
 		MoveInput.JumpAction = Jump;
 		MoveInput.KeyAction += Move;
+		MoveInput.Crouch += _Crouch;
+		MoveInput.Stand += _Stand;
 		MoveInput.Respawn = _Respawn;
 		PlayButton.Play -= OnPlay;
 		
@@ -61,4 +66,18 @@ public class MoveCharacter : MonoBehaviour {
 					player.transform.position = Respawn.transform.position;
 				}
 			}
+	void _Crouch()
+	{
+		cc.radius = .31f;
+		cc.height = .5f;
+		transform.localScale = VCrouch;
+		print("Crouch");
+	}
+	void _Stand()
+	{
+		cc.radius = .62f;
+		cc.height = 1;
+		transform.localScale = VStand;
+		print("Standing");
+	}
 }
