@@ -11,8 +11,11 @@ public class MoveInput : MonoBehaviour {
 	public static Action Reset;
 	public static Action Stand;
 	public static Action Crouch;
+	
+	
 
-	public bool canPlay = true;
+	public static bool canPlay = true;
+	public static bool isSwim = false;
 
 	void Start()
 	{
@@ -23,8 +26,8 @@ public class MoveInput : MonoBehaviour {
 		Reset();
 		Respawn();
 	}
-
-	IEnumerator RunInput()
+	
+	public IEnumerator RunInput()
 	{
 		while (canPlay)
 			{

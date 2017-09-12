@@ -11,7 +11,7 @@ public class MoveCharacter : MonoBehaviour {
 	public Vector3  VCrouch;
 	public Vector3  VStand;
 
-    public float speed = 5;
+    public float speed;
 	public float gravity;
 	public float jumpHeight = 0.2f;
 	public static float jumpCount = 2;
@@ -48,12 +48,22 @@ public class MoveCharacter : MonoBehaviour {
 	}
 
 	void Move (float _movement) {
+
 		if(cc.isGrounded == true)
 		{
 			gravity = 0;
 		}
 		else{
 			gravity = 1;
+		}
+		if(Input.GetKey(KeyCode.LeftShift) && cc.isGrounded)
+		{
+			speed = 10;
+			print("I am speed");
+		}
+		else
+		{
+			speed = 5;
 		}
 		tempMove.y -= gravity*Time.deltaTime;
 		tempMove.x = _movement*speed*Time.deltaTime;
