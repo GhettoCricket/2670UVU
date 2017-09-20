@@ -20,17 +20,12 @@ public class MoveCharacter : MonoBehaviour {
 
     void Start () {
 		cc = GetComponent<CharacterController>();
-		PlayButton.Play += OnPlay;
-	}
-	void OnPlay (){
 		MoveInput.JumpAction = Jump;
 		MoveInput.KeyAction += Move;
-		MoveInput.Crouch += _Crouch;
-		MoveInput.Stand += _Stand;
-		MoveInput.Respawn = _Respawn;
-		PlayButton.Play -= OnPlay;
-		
+		//MoveInput.Crouch += _Crouch;
+		//MoveInput.Stand += _Stand;
 	}
+
 	void Jump() {
 		if (cc.isGrounded == true)
 		{
@@ -59,7 +54,6 @@ public class MoveCharacter : MonoBehaviour {
 		if(Input.GetKey(KeyCode.LeftShift) && cc.isGrounded)
 		{
 			speed = 10;
-			print("I am speed");
 		}
 		else
 		{
@@ -69,25 +63,18 @@ public class MoveCharacter : MonoBehaviour {
 		tempMove.x = _movement*speed*Time.deltaTime;
 		cc.Move(tempMove);
 	}
-	void _Respawn()
-			{
-				if(player.position.y <= -50)
-				{
-					player.transform.position = Respawn.transform.position;
-				}
-			}
-	void _Crouch()
-	{
-		cc.radius = .31f;
-		cc.height = .5f;
-		transform.localScale = VCrouch;
-		print("Crouch");
-	}
-	void _Stand()
-	{
-		cc.radius = .62f;
-		cc.height = 1;
-		transform.localScale = VStand;
-		print("Standing");
-	}
+	//void _Crouch()
+	//{
+	//	cc.radius = .31f;
+	//	cc.height = .5f;
+	//	transform.localScale = VCrouch;
+	//	print("Crouch");
+	//}
+	//void _Stand()
+	//{
+	//	cc.radius = .62f;
+	//	cc.height = 1;
+	//	transform.localScale = VStand;
+	//	print("Standing");
+	//}
 }

@@ -9,22 +9,15 @@ public class MoveInput : MonoBehaviour {
 	public static Action JumpAction;
 	public static Action Respawn;
 	public static Action Reset;
-	public static Action Stand;
-	public static Action Crouch;
-	
+	//public static Action Stand;
+	//public static Action Crouch;
 	
 
 	public static bool canPlay = true;
-	public static bool isSwim = false;
 
 	void Start()
 	{
 		StartCoroutine(RunInput());
-	}
-	void Update()
-	{
-		Reset();
-		Respawn();
 	}
 	
 	public IEnumerator RunInput()
@@ -41,11 +34,11 @@ public class MoveInput : MonoBehaviour {
 				}
 				if (Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.LeftControl))
 				{
-					Crouch();
+					//Crouch();
 				}
 				if(Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.RightControl))
 				{
-					Stand();
+					//Stand();
 				}
 
 				yield return new WaitForSeconds(runtime);
