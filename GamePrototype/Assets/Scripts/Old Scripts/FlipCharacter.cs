@@ -8,14 +8,11 @@ public class FlipCharacter : MonoBehaviour {
 	Quaternion myRotate;
 	Vector3 rotValue;
 	// Use this for initialization
-	void Start () {
-		PlayButton.Play += OnPlay;
-		
+	void Start () 
+	{
+	 MoveInput.KeyAction += Flip;
 	}
-	void OnPlay (){
-		MoveInput.KeyAction += Flip;
-		PlayButton.Play -= OnPlay;
-	}
+	
     private void Flip(float obj)
     {
 		if(obj > 0 )

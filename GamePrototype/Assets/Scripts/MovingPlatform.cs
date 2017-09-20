@@ -5,30 +5,43 @@ using System;
 
 public class MovingPlatform : MonoBehaviour {
 
-	public float MoveDistanceL;
-	public float MoveDistanceR;
+	public Transform PosOne;
+	public Transform PosTwo;
+	public float Delay;
 	Vector3 MoveLR;
+	bool CanMove = true;
 
 	void Start()
 	{
+		MoPlatInput.PlatformStart += StartPlatforms;
+ 	}
+	void StartPlatforms()
+	{
 		StartCoroutine(Move());
+		MoPlatInput.PlatformStart -= StartPlatforms;
 	}
 
 	IEnumerator Move()
 	{
-		while(MoveLR.x > MoveDistanceL)
+		while (CanMove)
 		{
-			print(MoveLR.x);
+		MoveLR.x = 0f;
+		yield return new WaitForSeconds(Delay);
+		while(this.transform.position.x >= PosTwo.position.x)
+		{
+			
 			MoveLR.x -= 0.1f*Time.deltaTime;
 			transform.Translate(MoveLR);
-			yield return new WaitForSeconds(0.01f);
+			yield return null;
 		}
-		while(MoveLR.x < MoveDistanceR)
+		MoveLR.x = 0f;
+		yield return new WaitForSeconds(Delay);
+		while(this.transform.position.x <= PosOne.position.x)
 		{
-			print(MoveLR.x);
 			MoveLR.x += 0.1f*Time.deltaTime;
 			transform.Translate(MoveLR);
-			yield return new WaitForSeconds(0.01f);
+			yield return null;
+		}
 		}
 	}
 }
