@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class BearMove : MonoBehaviour {
 
-	[SerializeField]
-	Transform _destination;
+	
+	public Transform _destination;
 	public Vector3 IdlePosition;
 	public bool CanMove = false;
 

@@ -8,8 +8,8 @@ public class MoveCharacter : MonoBehaviour {
 
 	CharacterController cc;
 	Vector3 tempMove;
-	public Vector3  VCrouch;
-	public Vector3  VStand;
+	//public Vector3  VCrouch;
+	///public Vector3  VStand;
 
     public float speed;
 	public float gravity;
