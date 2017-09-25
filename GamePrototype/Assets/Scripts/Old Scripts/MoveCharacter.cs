@@ -17,11 +17,14 @@ public class MoveCharacter : MonoBehaviour {
 	public static float jumpCount = 2;
 	public Transform player;
 	public Transform Respawn;
+	public bool isSlow = false;
 
     void Start () {
 		cc = GetComponent<CharacterController>();
 		MoveInput.JumpAction = Jump;
 		MoveInput.KeyAction += Move;
+		SlowMovement.Slow += SlowMvmnt;
+		SlowMovement.NormalSpd += setNrmlMvmnt;
 		//MoveInput.Crouch += _Crouch;
 		//MoveInput.Stand += _Stand;
 	}
@@ -51,17 +54,29 @@ public class MoveCharacter : MonoBehaviour {
 		else{
 			gravity = 1;
 		}
-		if(Input.GetKey(KeyCode.LeftShift) && cc.isGrounded)
+		if(Input.GetKey(KeyCode.LeftShift) && cc.isGrounded && isSlow == false)
 		{
 			speed = 10;
 		}
-		else
+		else if (isSlow == false)
 		{
 			speed = 5;
+		}
+		else if (isSlow == true)
+		{
+			speed = 2.5f;
 		}
 		tempMove.y -= gravity*Time.deltaTime;
 		tempMove.x = _movement*speed*Time.deltaTime;
 		cc.Move(tempMove);
+	}
+	void SlowMvmnt()
+	{
+		isSlow = true;
+	}
+	void setNrmlMvmnt()
+	{
+		isSlow = false;
 	}
 	//void _Crouch()
 	//{
