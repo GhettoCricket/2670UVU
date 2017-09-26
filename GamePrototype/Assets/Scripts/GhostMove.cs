@@ -20,7 +20,6 @@ public class GhostMove : MonoBehaviour {
 			Debug.LogError("The nave mesh agent component is not attached to " + gameObject.name);
 			
 		}
-		StartCoroutine(UpdateDestination());
 	}
 		IEnumerator UpdateDestination ()
 	{
@@ -29,6 +28,13 @@ public class GhostMove : MonoBehaviour {
 			Vector3 targetVector = _destination.transform.position;
 			_naveMeshAgent.SetDestination(targetVector);
 			yield return new WaitForSeconds(0.1f);
+		}
+	}
+	void OnTriggerEnter(Collider other)
+	{
+		if(other.name == "GhostTrigger")
+		{
+			StartCoroutine(UpdateDestination());
 		}
 	}
 

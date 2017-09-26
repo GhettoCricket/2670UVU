@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Key
   - Bear
+  - Ghost
   layers:
   - Default
   - TransparentFX
