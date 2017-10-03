@@ -17,7 +17,9 @@ public class MoveCharacter : MonoBehaviour {
 	public static float jumpCount = 2;
 	public Transform player;
 	public Transform Respawn;
+	private Vector3 ZLock;
 	public bool isSlow = false;
+	bool isSwimming = false;
 
     void Start () {
 		cc = GetComponent<CharacterController>();
@@ -25,12 +27,14 @@ public class MoveCharacter : MonoBehaviour {
 		MoveInput.KeyAction += Move;
 		SlowMovement.Slow += SlowMvmnt;
 		SlowMovement.NormalSpd += setNrmlMvmnt;
+		Swim._Swim += SwimHandler;
+		Swim.Surface += SurfaceHandler;
 		//MoveInput.Crouch += _Crouch;
 		//MoveInput.Stand += _Stand;
 	}
 
 	void Jump() {
-		if (cc.isGrounded == true)
+		if (cc.isGrounded == true || isSwimming == true)
 		{
 			jumpCount = 2;
 		}
@@ -46,14 +50,22 @@ public class MoveCharacter : MonoBehaviour {
 
 	void Move (float _movement) {
 
-		if(cc.isGrounded == true)
+		ZLock = transform.position;
+		if(cc.isGrounded == true && isSwimming == false)
 		{
 			gravity = 0;
 		}
-		else{
-			gravity = 1;
+		if(isSwimming == true)
+		{
+			gravity = 0.2f;
+			jumpHeight = 0.15f;
 		}
-		if(Input.GetKey(KeyCode.LeftShift) && cc.isGrounded && isSlow == false)
+		else if (isSwimming == false)
+		{
+			gravity = 1;
+			jumpHeight = 0.3f;
+		}
+		if(Input.GetKey(KeyCode.LeftShift) && cc.isGrounded && isSlow == false && isSwimming == false)
 		{
 			speed = 10;
 		}
@@ -65,6 +77,8 @@ public class MoveCharacter : MonoBehaviour {
 		{
 			speed = 2.5f;
 		}
+		ZLock.z = 0.51f;
+		transform.position = ZLock;
 		tempMove.y -= gravity*Time.deltaTime;
 		tempMove.x = _movement*speed*Time.deltaTime;
 		cc.Move(tempMove);
@@ -76,6 +90,15 @@ public class MoveCharacter : MonoBehaviour {
 	void setNrmlMvmnt()
 	{
 		isSlow = false;
+	}
+	
+	void SwimHandler()
+	{
+		isSwimming = true;
+	}
+	void SurfaceHandler()
+	{
+		isSwimming = false;
 	}
 	//void _Crouch()
 	//{

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
+[RequireComponent(typeof(Rigidbody))]
 public class FallingObject : MonoBehaviour {
 
-	public Rigidbody _Rigidbody;
+	private Rigidbody _Rigidbody;
 
 	void Start()
 	{
