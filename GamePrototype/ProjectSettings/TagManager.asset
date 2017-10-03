@@ -7,6 +7,7 @@ TagManager:
   - Key
   - Bear
   - Ghost
+  - Distraction
   layers:
   - Default
   - TransparentFX

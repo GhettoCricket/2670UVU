@@ -9,8 +9,10 @@ public class TriggerRespawn : MonoBehaviour {
 
 	void OnTriggerEnter(Collider Cl)
 	{
-		
+		if(Cl.tag == "Player")
+		{
 		Player.transform.position = Respawn.transform.position;
+		}
 	}
 
 }

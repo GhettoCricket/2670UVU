@@ -38,8 +38,7 @@ public class MoveCharacter : MonoBehaviour {
 		{
 			tempMove.y = jumpHeight;
 			jumpCount -= 1;
-			print(jumpCount);
-			
+
 		}
 		
 		

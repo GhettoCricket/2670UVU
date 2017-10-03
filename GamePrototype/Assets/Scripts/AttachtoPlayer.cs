@@ -39,13 +39,11 @@ public class AttachtoPlayer : MonoBehaviour {
 			isAttached = false;
 			inAir = true;
 			StartCoroutine(ThrowDistance());
-			
-			print("Throw");
 		}
 		
 	}
 	IEnumerator ThrowDistance()
-		{	print("Start Throw");
+		{
 			ThrowV.x = .2f;
 			ThrowV.y = .1f;
 			while(inAir && isAttached == false)
@@ -53,7 +51,6 @@ public class AttachtoPlayer : MonoBehaviour {
 				ThrowV.x -= 0.1f*Time.deltaTime;
 				ThrowV.y -= 0.1f*Time.deltaTime;
 				transform.Translate(ThrowV);
-				print(ThrowV);
 				if(ThrowV.x <= 0f)
 				{
 					inAir = false;
