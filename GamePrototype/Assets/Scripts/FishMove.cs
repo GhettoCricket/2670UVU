@@ -29,19 +29,19 @@ public class FishMove : MonoBehaviour
 		{
 			Vector3 targetVector = IdlePos1.transform.position;
 			Agent.SetDestination(targetVector);
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(0.5f);
 		}
 		while (isPos2)
 		{
 			Vector3 targetVector = IdlePos2.transform.position;
 			Agent.SetDestination(targetVector);
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(0.5f);
 		}
 		while (isPos3)
 		{
 			Vector3 targetVector = IdlePos3.transform.position;
 			Agent.SetDestination(targetVector);
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(0.5f);
 		}
 	}
 	void OnTriggerEnter(Collider other)
