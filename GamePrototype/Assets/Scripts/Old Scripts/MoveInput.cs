@@ -26,20 +26,20 @@ public class MoveInput : MonoBehaviour {
 			{
 				if (Input.GetKeyDown(KeyCode.Space))
 				{
-				JumpAction();
+					JumpAction();
 				}
 				if (KeyAction != null)
 				{
 					KeyAction(Input.GetAxis("Horizontal"));
 				}
-				if (Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.LeftControl))
+				/*if (Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.LeftControl))
 				{
 					//Crouch();
 				}
 				if(Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.RightControl))
 				{
 					//Stand();
-				}
+				}*/
 
 				yield return new WaitForSeconds(runtime);
 			
