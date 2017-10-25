@@ -32,6 +32,15 @@ public class MoveCharacter : MonoBehaviour {
 		//MoveInput.Crouch += _Crouch;
 		//MoveInput.Stand += _Stand;
 	}
+	void OnDisable()
+	{
+		MoveInput.JumpAction -= Jump;
+		MoveInput.KeyAction -= Move;
+		SlowMovement.Slow -= SlowMvmnt;
+		SlowMovement.NormalSpd -= setNrmlMvmnt;
+		Swim._Swim -= SwimHandler;
+		Swim.Surface -= SurfaceHandler;
+	}
 
 	void Jump() {
 		if (cc.isGrounded == true || isSwimming == true)

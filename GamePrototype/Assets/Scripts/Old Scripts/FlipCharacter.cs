@@ -12,6 +12,10 @@ public class FlipCharacter : MonoBehaviour {
 	{
 	 MoveInput.KeyAction += Flip;
 	}
+	void OnDisable()
+	{
+		MoveInput.KeyAction -= Flip;	
+	}
 	
     private void Flip(float obj)
     {

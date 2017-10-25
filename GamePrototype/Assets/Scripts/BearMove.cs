@@ -29,6 +29,12 @@ public class BearMove : MonoBehaviour {
 		}	
 		
 	}
+	void OnDisable()
+	{
+		BearTrigger.BearEncounter -= StartMove;
+		BearTrigger.RunAway -= StopMove;
+		BearTrigger.Distracted -= Distracted;
+	}
 
 
 	IEnumerator UpdateDestination ()

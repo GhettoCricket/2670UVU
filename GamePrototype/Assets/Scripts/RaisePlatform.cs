@@ -9,9 +9,11 @@ public float RaiseDistance;
 
  void Start()
  {
-	 RaiseInput.RaiseUP += _RaisePlatform;
-
-	 
+	 RaiseInput.RaiseUP += _RaisePlatform;	 
+ }
+ void OnDisable()
+ {
+	 RaiseInput.RaiseUP -= _RaisePlatform;
  }
   IEnumerator Raise ()
 	{

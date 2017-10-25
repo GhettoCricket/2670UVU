@@ -5,7 +5,7 @@ using System;
 public class MoveInput : MonoBehaviour {
 
 	public static Action<float> KeyAction;
-	public float runtime = 0.01f;
+	public static float runtime = 0.01f;
 	public static Action JumpAction;
 	public static Action Respawn;
 	public static Action Reset;
@@ -20,7 +20,7 @@ public class MoveInput : MonoBehaviour {
 		StartCoroutine(RunInput());
 	}
 	
-	public IEnumerator RunInput()
+	public static IEnumerator RunInput()
 	{
 		while (canPlay)
 			{

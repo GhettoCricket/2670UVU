@@ -16,4 +16,9 @@ public class AnimController : MonoBehaviour {
 	{
 		animator.SetFloat("speedPercent" , obj);
 	}
+
+	void OnDisable()
+	{
+		MoveInput.KeyAction -= Animate;
+	}
 }
