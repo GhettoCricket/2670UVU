@@ -38,10 +38,10 @@ public class GameData
 			instance = JsonUtility.FromJson<GameData>(PlayerPrefs.GetString(dataName));
 		}
 	}
-	/*public static void SetData()
+	public static void SetData()
 	{
 		PlayerPrefs.SetString(dataName, JsonUtility.ToJson(instance));
-	}*/
+	}
 
 	public enum PlayerSpeed
 	{

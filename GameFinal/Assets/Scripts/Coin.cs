@@ -9,6 +9,5 @@ public class Coin : MonoBehaviour {
 	{
 		GameData.Instance.CoinCount += 1;
 		coin.SetActive(false);
-		print(GameData.Instance.CoinCount);
 	}
 }

@@ -29,12 +29,12 @@ public class MoveCharacter : MonoBehaviour {
 	void Jump() {
 		if (cc.isGrounded == true)
 		{
-			GameData.Instance.jumpCount = 2;
+			GameData.Instance.jumpCount = 2f;
 		}
-		if ( GameData.Instance.jumpCount != 0)
+		if ( GameData.Instance.jumpCount != 0f)
 		{
 			tempMove.y = jumpHeight;
-			GameData.Instance.jumpCount -= 1;
+			GameData.Instance.jumpCount -= 1f;
 
 		}
 		print(GameData.Instance.jumpCount);
