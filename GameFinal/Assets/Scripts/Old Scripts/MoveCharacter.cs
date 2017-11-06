@@ -8,9 +8,7 @@ public class MoveCharacter : MonoBehaviour {
 
 	CharacterController cc;
 	Vector3 tempMove;
-	private float jumpHeight = 0.6f;
-	public Transform player;
-	public Transform Respawn;
+	private int jumpCount = 2;
 	private Vector3 ZLock;
 	public GameData.PlayerSpeed Speed;
 
@@ -27,35 +25,25 @@ public class MoveCharacter : MonoBehaviour {
 	}
 
 	void Jump() {
-		if (cc.isGrounded == true)
+		if ( jumpCount != 0)
 		{
-			GameData.Instance.jumpCount = 2f;
-		}
-		if ( GameData.Instance.jumpCount != 0f)
-		{
-			tempMove.y = jumpHeight;
-			GameData.Instance.jumpCount -= 1f;
-
-		}
-		print(GameData.Instance.jumpCount);
-		
-		
+			tempMove.y = GameData.Instance.jumpHeight;
+			jumpCount -= 1;
+		}	
 	}
 
-	void Move (float _movement) {
-
+	void Move (float _movement) 
+	{
 		ZLock = transform.position;
-		if(cc.isGrounded == true)
-		{
-			GameData.Instance.jumpCount = 2;
-			GameData.Instance.gravity = 2;
-		}
 		ZLock.z = 0f;
 		transform.position = ZLock;
 		tempMove.y -= GameData.Instance.gravity*Time.deltaTime;
 		tempMove.x = _movement*GameData.Instance.speed*Time.deltaTime;
 		cc.Move(tempMove);
-
+		if (cc.isGrounded == true)
+		{
+			jumpCount = 2;
+		}
 
 		switch(Speed)
 		{

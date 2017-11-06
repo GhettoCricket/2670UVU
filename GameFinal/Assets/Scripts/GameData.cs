@@ -8,8 +8,8 @@ public class GameData
 {
 	public float health;
 	public float speed;
-	public float gravity;
-	public float jumpCount;
+	public float gravity = 2;
+	public float jumpHeight = 0.6f;
 	public int CoinCount;
 	public int IdolCount;
 	
