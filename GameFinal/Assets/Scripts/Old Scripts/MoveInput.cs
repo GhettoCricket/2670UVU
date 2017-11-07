@@ -7,7 +7,7 @@ public class MoveInput : MonoBehaviour {
 	public static Action<float> KeyAction;
 	public static float runtime = 0.01f;
 	public static Action JumpAction;
-	public static Action Respawn;
+	public static Action GPound;
 	public static bool canPlay = true;
 
 	void Start()
@@ -26,6 +26,10 @@ public class MoveInput : MonoBehaviour {
 				if (KeyAction != null)
 				{
 					KeyAction(Input.GetAxis("Horizontal"));
+				}
+				if(Input.GetKeyDown(KeyCode.LeftControl))
+				{
+					GPound();
 				}
 				yield return new WaitForSeconds(runtime);
 			

@@ -10,18 +10,20 @@ public class MoveCharacter : MonoBehaviour {
 	Vector3 tempMove;
 	private int jumpCount = 2;
 	private Vector3 ZLock;
-	public GameData.PlayerSpeed Speed;
+	public static GameData.PlayerState State;
 
 
     void Start () {
 		cc = GetComponent<CharacterController>();
 		MoveInput.JumpAction = Jump;
 		MoveInput.KeyAction += Move;
+		MoveInput.GPound += GroundPound;
 	}
 	void OnDisable()
 	{
 		MoveInput.JumpAction -= Jump;
 		MoveInput.KeyAction -= Move;
+		MoveInput.GPound -= GroundPound;
 	}
 
 	void Jump() {
@@ -30,6 +32,11 @@ public class MoveCharacter : MonoBehaviour {
 			tempMove.y = GameData.Instance.jumpHeight;
 			jumpCount -= 1;
 		}	
+	}
+	void GroundPound()
+	{
+		State = GameData.PlayerState.GPOUND;
+		print(State);
 	}
 
 	void Move (float _movement) 
@@ -43,19 +50,31 @@ public class MoveCharacter : MonoBehaviour {
 		if (cc.isGrounded == true)
 		{
 			jumpCount = 2;
+			StartCoroutine(StateChangerWait());
+			
 		}
 
-		switch(Speed)
+		switch(State)
 		{
-			case GameData.PlayerSpeed.RUN:
+			case GameData.PlayerState.RUN:
 			GameData.Instance.speed = 10;
+			GameData.Instance.gravity = 2;
 			break;
-			case GameData.PlayerSpeed.BOOST:
+			case GameData.PlayerState.BOOST:
 			GameData.Instance.speed = 20;
 			break;
-			case GameData.PlayerSpeed.DRAG:
+			case GameData.PlayerState.DRAG:
 			GameData.Instance.speed = 5;
 			break;
+			case GameData.PlayerState.GPOUND:
+			GameData.Instance.gravity = 4;
+			break;
 		}
+	}
+	IEnumerator StateChangerWait()
+	{
+		yield return new WaitForSeconds(2);
+		State = GameData.PlayerState.RUN;
+		
 	}
 }

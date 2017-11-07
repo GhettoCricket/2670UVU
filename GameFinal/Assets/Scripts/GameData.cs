@@ -43,10 +43,11 @@ public class GameData
 		PlayerPrefs.SetString(dataName, JsonUtility.ToJson(instance));
 	}
 
-	public enum PlayerSpeed
+	public enum PlayerState
 	{
 		RUN,
 		DRAG,
 		BOOST,
+		GPOUND,
 	}
 }
