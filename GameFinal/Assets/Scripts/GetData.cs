@@ -7,7 +7,7 @@ public class GetData : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		GameData.Instance.health = 10;
+		GameData.Instance.health = 1;
 	}
 	void OnApplicationQuit()
 	{

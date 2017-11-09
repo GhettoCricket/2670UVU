@@ -6,7 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-	public float health;
+	public float health = 1;
 	public float speed;
 	public float gravity = 2;
 	public float jumpHeight = 0.6f;
