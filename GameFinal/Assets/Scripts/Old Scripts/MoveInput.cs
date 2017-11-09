@@ -27,7 +27,7 @@ public class MoveInput : MonoBehaviour {
 				{
 					KeyAction(Input.GetAxis("Horizontal"));
 				}
-				if(Input.GetKeyDown(KeyCode.LeftControl))
+				if(Input.GetKey(KeyCode.LeftControl))
 				{
 					GPound();
 				}

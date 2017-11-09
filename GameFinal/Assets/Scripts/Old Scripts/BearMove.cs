@@ -36,7 +36,6 @@ public class BearMove : MonoBehaviour {
 		BearTrigger.Distracted -= Distracted;
 	}
 
-
 	IEnumerator UpdateDestination ()
 	{
 		while (CanMove)

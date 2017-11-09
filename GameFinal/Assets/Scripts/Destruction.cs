@@ -12,8 +12,6 @@ public class Destruction : MonoBehaviour
 		{
 		Instantiate(DestructedV , transform.position, transform.rotation);
 		Destroy(gameObject);
-		print("Should be Broken");
 		}
-		print("Break");
 	}
 }

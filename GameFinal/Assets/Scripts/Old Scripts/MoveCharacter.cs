@@ -7,7 +7,7 @@ using UnityEngine;
 public class MoveCharacter : MonoBehaviour {
 
 	CharacterController cc;
-	Vector3 tempMove;
+	public static Vector3 tempMove;
 	private int jumpCount = 2;
 	private Vector3 ZLock;
 	public static GameData.PlayerState State;
@@ -36,7 +36,6 @@ public class MoveCharacter : MonoBehaviour {
 	void GroundPound()
 	{
 		State = GameData.PlayerState.GPOUND;
-		print(State);
 	}
 
 	void Move (float _movement) 
@@ -50,8 +49,7 @@ public class MoveCharacter : MonoBehaviour {
 		if (cc.isGrounded == true)
 		{
 			jumpCount = 2;
-			StartCoroutine(StateChangerWait());
-			
+			StartCoroutine(GpoundWait());
 		}
 
 		switch(State)
@@ -67,14 +65,13 @@ public class MoveCharacter : MonoBehaviour {
 			GameData.Instance.speed = 5;
 			break;
 			case GameData.PlayerState.GPOUND:
-			GameData.Instance.gravity = 4;
+			GameData.Instance.gravity = 6;
 			break;
 		}
 	}
-	IEnumerator StateChangerWait()
+	IEnumerator GpoundWait()
 	{
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(3);
 		State = GameData.PlayerState.RUN;
-		
 	}
 }

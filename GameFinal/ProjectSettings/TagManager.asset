@@ -17,9 +17,9 @@ TagManager:
   - Player
   - Coins
   - Interactalbe
-  - 
-  - 
-  - 
+  - NavMeshMesh
+  - Enemy
+  - EnemyDestroyer
   - 
   - 
   - 

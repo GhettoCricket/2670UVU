@@ -10,19 +10,11 @@ public class BearTrigger : MonoBehaviour {
 	public static Action Distracted; 
 	void OnTriggerEnter(Collider Cl)
 	{
-		if(Cl.tag == "Player")
-		{
-			print("BEAR!");
-			BearEncounter();
-		}
+		BearEncounter();	
 	}
 	void OnTriggerExit(Collider Cl)
-	{
-		if(Cl.tag == "Player" || Cl.tag == "Distraction")
-		{
-		print("RUNAWAY!");
-		RunAway();
-		}
+	{	
+		RunAway();	
 	}
 	void OnTriggerStay(Collider other)
 	{
