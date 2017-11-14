@@ -9,6 +9,7 @@ public class MoveInput : MonoBehaviour {
 	public static Action JumpAction;
 	public static Action GPound;
 	public static bool canPlay = true;
+	public static bool isPound;
 
 	void Start()
 	{
@@ -29,6 +30,7 @@ public class MoveInput : MonoBehaviour {
 				}
 				if(Input.GetKey(KeyCode.LeftControl))
 				{
+					isPound = true;
 					GPound();
 				}
 				yield return new WaitForSeconds(runtime);

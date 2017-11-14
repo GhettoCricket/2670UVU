@@ -7,5 +7,6 @@ public class DamagePlayer : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		GameData.Instance.health -= .1f;
+		print("Damaged by " + other.name);
 	}
 }

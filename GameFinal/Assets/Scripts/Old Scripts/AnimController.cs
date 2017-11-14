@@ -23,6 +23,8 @@ public class AnimController : MonoBehaviour {
 		Movefloat_X = Mathf.Abs(MoveCharacter.tempMove.x*7);
 		animator.SetFloat("Velocity_X", Movefloat_X);
 		animator.SetFloat("Velocity_Y", Movefloat_Y);
+		animator.SetBool("Grounded" , MoveCharacter.isGrounded);
+		animator.SetBool("GP" , MoveInput.isPound);
 	}
 
 	void OnDisable()

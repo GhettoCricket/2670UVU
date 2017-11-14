@@ -11,6 +11,7 @@ public class MoveCharacter : MonoBehaviour {
 	private int jumpCount = 2;
 	private Vector3 ZLock;
 	public static GameData.PlayerState State;
+	public static bool isGrounded;
 
 
 
@@ -30,7 +31,7 @@ public class MoveCharacter : MonoBehaviour {
 	void Jump() {
 		if ( jumpCount != 0)
 		{
-			
+			isGrounded = false;	
 			tempMove.y = GameData.Instance.jumpHeight;
 			jumpCount -= 1;
 		}	
@@ -50,8 +51,11 @@ public class MoveCharacter : MonoBehaviour {
 		cc.Move(tempMove);
 		if (cc.isGrounded == true)
 		{
+			isGrounded = true;
+			MoveInput.isPound = false;
 			jumpCount = 2;
-			StartCoroutine(GpoundWait());
+			State = GameData.PlayerState.RUN;
+			//StartCoroutine(GpoundWait());
 		}
 
 		switch(State)
@@ -71,9 +75,9 @@ public class MoveCharacter : MonoBehaviour {
 			break;
 		}
 	}
-	IEnumerator GpoundWait()
+	/*IEnumerator GpoundWait()
 	{
 		yield return new WaitForSeconds(3);
 		State = GameData.PlayerState.RUN;
-	}
+	}*/
 }

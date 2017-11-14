@@ -10,10 +10,12 @@ public class BearTrigger : MonoBehaviour {
 	public static Action Distracted; 
 	void OnTriggerEnter(Collider Cl)
 	{
+		if(BearEncounter != null)
 		BearEncounter();	
 	}
 	void OnTriggerExit(Collider Cl)
 	{	
+		if(RunAway != null)
 		RunAway();	
 	}
 	void OnTriggerStay(Collider other)

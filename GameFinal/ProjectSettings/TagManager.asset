@@ -20,7 +20,7 @@ TagManager:
   - NavMeshMesh
   - Enemy
   - EnemyDestroyer
-  - 
+  - EnemyTrigger
   - 
   - 
   - 
