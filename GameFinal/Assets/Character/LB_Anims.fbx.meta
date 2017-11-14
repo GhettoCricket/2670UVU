@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5a2deea114427b14894898c6c47489c4
-timeCreated: 1507846433
+guid: f0184a21eeb472d488063d41ca9f2c40
+timeCreated: 1510605763
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
@@ -32,87 +32,87 @@ ModelImporter:
     100048: L_Toes_ctrl_grp
     100050: L_Wrist_ctrl
     100052: L_Wrist_ctrl 1
-    100054: LB_CSpine_DEF
-    100056: LB_CSpine_JNT
-    100058: LB_geo_DO_NOT_TOUCH
-    100060: LB_Head_DEF
-    100062: LB_Head_JNT
-    100064: LB_L_Ankle_DEF
-    100066: LB_L_Ankle_JNT
-    100068: LB_L_Collar_DEF
-    100070: LB_L_Collar_JNT
-    100072: LB_L_Elbow_DEF
-    100074: LB_L_Elbow_JNT
-    100076: LB_L_Fingers1_DEF
-    100078: LB_L_Fingers1_JNT
-    100080: LB_L_Fingers2_DEF
-    100082: LB_L_Fingers2_JNT
-    100084: LB_L_Fingers3_DEF
-    100086: LB_L_Fingers3_JNT
-    100088: LB_L_Foot_DEF
-    100090: LB_L_Foot_JNT
-    100092: LB_L_Hip_DEF
-    100094: LB_L_Hip_JNT
-    100096: LB_L_Index1_DEF
-    100098: LB_L_Index1_JNT
-    100100: LB_L_Index2_DEF
-    100102: LB_L_Index2_JNT
-    100104: LB_L_Index3_DEF
-    100106: LB_L_Index3_JNT
-    100108: LB_L_Knee_DEF
-    100110: LB_L_Knee_JNT
-    100112: LB_L_Shoulder_DEF
-    100114: LB_L_Shoulder_JNT
-    100116: LB_L_Thumb1_DEF
-    100118: LB_L_Thumb1_JNT
-    100120: LB_L_Thumb2_DEF
-    100122: LB_L_Thumb2_JNT
-    100124: LB_L_Thumb3_DEF
-    100126: LB_L_Thumb3_JNT
-    100128: LB_L_Wrist_DEF
-    100130: LB_L_Wrist_JNT
-    100132: LB_Neck_DEF
-    100134: LB_Neck_JNT
-    100136: LB_R_Ankle_DEF
-    100138: LB_R_Ankle_JNT
-    100140: LB_R_Collar_DEF
-    100142: LB_R_Collar_JNT
-    100144: LB_R_Elbow_DEF
-    100146: LB_R_Elbow_JNT
-    100148: LB_R_Fingers1_DEF
-    100150: LB_R_Fingers1_JNT
-    100152: LB_R_Fingers2_DEF
-    100154: LB_R_Fingers2_JNT
-    100156: LB_R_Fingers3_DEF
-    100158: LB_R_Fingers3_JNT
-    100160: LB_R_Foot_DEF
-    100162: LB_R_Foot_JNT
-    100164: LB_R_Hip_DEF
-    100166: LB_R_Hip_JNT
-    100168: LB_R_Index1_DEF
-    100170: LB_R_Index1_JNT
-    100172: LB_R_Index2_DEF
-    100174: LB_R_Index2_JNT
-    100176: LB_R_Index3_DEF
-    100178: LB_R_Index3_JNT
-    100180: LB_R_Knee_DEF
-    100182: LB_R_Knee_JNT
-    100184: LB_R_Shoulder_DEF
-    100186: LB_R_Shoulder_JNT
-    100188: LB_R_Thumb1_DEF
-    100190: LB_R_Thumb1_JNT
-    100192: LB_R_Thumb2_DEF
-    100194: LB_R_Thumb2_JNT
-    100196: LB_R_Thumb3_DEF
-    100198: LB_R_Thumb3_JNT
-    100200: LB_R_Wrist_DEF
-    100202: LB_R_Wrist_JNT
-    100204: LB_Root_ctrl_TOUCH_ME
-    100206: LB_Root_DEF_DO_NOT_TOUCH
-    100208: LB_Root_JNT_DO_NOT_TOUCH
-    100210: LB_Spine_DEF
-    100212: LB_Spine_JNT
-    100214: //RootNode
+    100054: //RootNode
+    100056: LB_CSpine_DEF
+    100058: LB_CSpine_JNT
+    100060: LB_geo_DO_NOT_TOUCH
+    100062: LB_Head_DEF
+    100064: LB_Head_JNT
+    100066: LB_L_Ankle_DEF
+    100068: LB_L_Ankle_JNT
+    100070: LB_L_Collar_DEF
+    100072: LB_L_Collar_JNT
+    100074: LB_L_Elbow_DEF
+    100076: LB_L_Elbow_JNT
+    100078: LB_L_Fingers1_DEF
+    100080: LB_L_Fingers1_JNT
+    100082: LB_L_Fingers2_DEF
+    100084: LB_L_Fingers2_JNT
+    100086: LB_L_Fingers3_DEF
+    100088: LB_L_Fingers3_JNT
+    100090: LB_L_Foot_DEF
+    100092: LB_L_Foot_JNT
+    100094: LB_L_Hip_DEF
+    100096: LB_L_Hip_JNT
+    100098: LB_L_Index1_DEF
+    100100: LB_L_Index1_JNT
+    100102: LB_L_Index2_DEF
+    100104: LB_L_Index2_JNT
+    100106: LB_L_Index3_DEF
+    100108: LB_L_Index3_JNT
+    100110: LB_L_Knee_DEF
+    100112: LB_L_Knee_JNT
+    100114: LB_L_Shoulder_DEF
+    100116: LB_L_Shoulder_JNT
+    100118: LB_L_Thumb1_DEF
+    100120: LB_L_Thumb1_JNT
+    100122: LB_L_Thumb2_DEF
+    100124: LB_L_Thumb2_JNT
+    100126: LB_L_Thumb3_DEF
+    100128: LB_L_Thumb3_JNT
+    100130: LB_L_Wrist_DEF
+    100132: LB_L_Wrist_JNT
+    100134: LB_Neck_DEF
+    100136: LB_Neck_JNT
+    100138: LB_R_Ankle_DEF
+    100140: LB_R_Ankle_JNT
+    100142: LB_R_Collar_DEF
+    100144: LB_R_Collar_JNT
+    100146: LB_R_Elbow_DEF
+    100148: LB_R_Elbow_JNT
+    100150: LB_R_Fingers1_DEF
+    100152: LB_R_Fingers1_JNT
+    100154: LB_R_Fingers2_DEF
+    100156: LB_R_Fingers2_JNT
+    100158: LB_R_Fingers3_DEF
+    100160: LB_R_Fingers3_JNT
+    100162: LB_R_Foot_DEF
+    100164: LB_R_Foot_JNT
+    100166: LB_R_Hip_DEF
+    100168: LB_R_Hip_JNT
+    100170: LB_R_Index1_DEF
+    100172: LB_R_Index1_JNT
+    100174: LB_R_Index2_DEF
+    100176: LB_R_Index2_JNT
+    100178: LB_R_Index3_DEF
+    100180: LB_R_Index3_JNT
+    100182: LB_R_Knee_DEF
+    100184: LB_R_Knee_JNT
+    100186: LB_R_Shoulder_DEF
+    100188: LB_R_Shoulder_JNT
+    100190: LB_R_Thumb1_DEF
+    100192: LB_R_Thumb1_JNT
+    100194: LB_R_Thumb2_DEF
+    100196: LB_R_Thumb2_JNT
+    100198: LB_R_Thumb3_DEF
+    100200: LB_R_Thumb3_JNT
+    100202: LB_R_Wrist_DEF
+    100204: LB_R_Wrist_JNT
+    100206: LB_Root_ctrl_TOUCH_ME
+    100208: LB_Root_DEF_DO_NOT_TOUCH
+    100210: LB_Root_JNT_DO_NOT_TOUCH
+    100212: LB_Spine_DEF
+    100214: LB_Spine_JNT
     100216: Neck_ctrl
     100218: Neck_ctrl_grp
     100220: Pants
@@ -165,87 +165,87 @@ ModelImporter:
     400048: L_Toes_ctrl_grp
     400050: L_Wrist_ctrl
     400052: L_Wrist_ctrl 1
-    400054: LB_CSpine_DEF
-    400056: LB_CSpine_JNT
-    400058: LB_geo_DO_NOT_TOUCH
-    400060: LB_Head_DEF
-    400062: LB_Head_JNT
-    400064: LB_L_Ankle_DEF
-    400066: LB_L_Ankle_JNT
-    400068: LB_L_Collar_DEF
-    400070: LB_L_Collar_JNT
-    400072: LB_L_Elbow_DEF
-    400074: LB_L_Elbow_JNT
-    400076: LB_L_Fingers1_DEF
-    400078: LB_L_Fingers1_JNT
-    400080: LB_L_Fingers2_DEF
-    400082: LB_L_Fingers2_JNT
-    400084: LB_L_Fingers3_DEF
-    400086: LB_L_Fingers3_JNT
-    400088: LB_L_Foot_DEF
-    400090: LB_L_Foot_JNT
-    400092: LB_L_Hip_DEF
-    400094: LB_L_Hip_JNT
-    400096: LB_L_Index1_DEF
-    400098: LB_L_Index1_JNT
-    400100: LB_L_Index2_DEF
-    400102: LB_L_Index2_JNT
-    400104: LB_L_Index3_DEF
-    400106: LB_L_Index3_JNT
-    400108: LB_L_Knee_DEF
-    400110: LB_L_Knee_JNT
-    400112: LB_L_Shoulder_DEF
-    400114: LB_L_Shoulder_JNT
-    400116: LB_L_Thumb1_DEF
-    400118: LB_L_Thumb1_JNT
-    400120: LB_L_Thumb2_DEF
-    400122: LB_L_Thumb2_JNT
-    400124: LB_L_Thumb3_DEF
-    400126: LB_L_Thumb3_JNT
-    400128: LB_L_Wrist_DEF
-    400130: LB_L_Wrist_JNT
-    400132: LB_Neck_DEF
-    400134: LB_Neck_JNT
-    400136: LB_R_Ankle_DEF
-    400138: LB_R_Ankle_JNT
-    400140: LB_R_Collar_DEF
-    400142: LB_R_Collar_JNT
-    400144: LB_R_Elbow_DEF
-    400146: LB_R_Elbow_JNT
-    400148: LB_R_Fingers1_DEF
-    400150: LB_R_Fingers1_JNT
-    400152: LB_R_Fingers2_DEF
-    400154: LB_R_Fingers2_JNT
-    400156: LB_R_Fingers3_DEF
-    400158: LB_R_Fingers3_JNT
-    400160: LB_R_Foot_DEF
-    400162: LB_R_Foot_JNT
-    400164: LB_R_Hip_DEF
-    400166: LB_R_Hip_JNT
-    400168: LB_R_Index1_DEF
-    400170: LB_R_Index1_JNT
-    400172: LB_R_Index2_DEF
-    400174: LB_R_Index2_JNT
-    400176: LB_R_Index3_DEF
-    400178: LB_R_Index3_JNT
-    400180: LB_R_Knee_DEF
-    400182: LB_R_Knee_JNT
-    400184: LB_R_Shoulder_DEF
-    400186: LB_R_Shoulder_JNT
-    400188: LB_R_Thumb1_DEF
-    400190: LB_R_Thumb1_JNT
-    400192: LB_R_Thumb2_DEF
-    400194: LB_R_Thumb2_JNT
-    400196: LB_R_Thumb3_DEF
-    400198: LB_R_Thumb3_JNT
-    400200: LB_R_Wrist_DEF
-    400202: LB_R_Wrist_JNT
-    400204: LB_Root_ctrl_TOUCH_ME
-    400206: LB_Root_DEF_DO_NOT_TOUCH
-    400208: LB_Root_JNT_DO_NOT_TOUCH
-    400210: LB_Spine_DEF
-    400212: LB_Spine_JNT
-    400214: //RootNode
+    400054: //RootNode
+    400056: LB_CSpine_DEF
+    400058: LB_CSpine_JNT
+    400060: LB_geo_DO_NOT_TOUCH
+    400062: LB_Head_DEF
+    400064: LB_Head_JNT
+    400066: LB_L_Ankle_DEF
+    400068: LB_L_Ankle_JNT
+    400070: LB_L_Collar_DEF
+    400072: LB_L_Collar_JNT
+    400074: LB_L_Elbow_DEF
+    400076: LB_L_Elbow_JNT
+    400078: LB_L_Fingers1_DEF
+    400080: LB_L_Fingers1_JNT
+    400082: LB_L_Fingers2_DEF
+    400084: LB_L_Fingers2_JNT
+    400086: LB_L_Fingers3_DEF
+    400088: LB_L_Fingers3_JNT
+    400090: LB_L_Foot_DEF
+    400092: LB_L_Foot_JNT
+    400094: LB_L_Hip_DEF
+    400096: LB_L_Hip_JNT
+    400098: LB_L_Index1_DEF
+    400100: LB_L_Index1_JNT
+    400102: LB_L_Index2_DEF
+    400104: LB_L_Index2_JNT
+    400106: LB_L_Index3_DEF
+    400108: LB_L_Index3_JNT
+    400110: LB_L_Knee_DEF
+    400112: LB_L_Knee_JNT
+    400114: LB_L_Shoulder_DEF
+    400116: LB_L_Shoulder_JNT
+    400118: LB_L_Thumb1_DEF
+    400120: LB_L_Thumb1_JNT
+    400122: LB_L_Thumb2_DEF
+    400124: LB_L_Thumb2_JNT
+    400126: LB_L_Thumb3_DEF
+    400128: LB_L_Thumb3_JNT
+    400130: LB_L_Wrist_DEF
+    400132: LB_L_Wrist_JNT
+    400134: LB_Neck_DEF
+    400136: LB_Neck_JNT
+    400138: LB_R_Ankle_DEF
+    400140: LB_R_Ankle_JNT
+    400142: LB_R_Collar_DEF
+    400144: LB_R_Collar_JNT
+    400146: LB_R_Elbow_DEF
+    400148: LB_R_Elbow_JNT
+    400150: LB_R_Fingers1_DEF
+    400152: LB_R_Fingers1_JNT
+    400154: LB_R_Fingers2_DEF
+    400156: LB_R_Fingers2_JNT
+    400158: LB_R_Fingers3_DEF
+    400160: LB_R_Fingers3_JNT
+    400162: LB_R_Foot_DEF
+    400164: LB_R_Foot_JNT
+    400166: LB_R_Hip_DEF
+    400168: LB_R_Hip_JNT
+    400170: LB_R_Index1_DEF
+    400172: LB_R_Index1_JNT
+    400174: LB_R_Index2_DEF
+    400176: LB_R_Index2_JNT
+    400178: LB_R_Index3_DEF
+    400180: LB_R_Index3_JNT
+    400182: LB_R_Knee_DEF
+    400184: LB_R_Knee_JNT
+    400186: LB_R_Shoulder_DEF
+    400188: LB_R_Shoulder_JNT
+    400190: LB_R_Thumb1_DEF
+    400192: LB_R_Thumb1_JNT
+    400194: LB_R_Thumb2_DEF
+    400196: LB_R_Thumb2_JNT
+    400198: LB_R_Thumb3_DEF
+    400200: LB_R_Thumb3_JNT
+    400202: LB_R_Wrist_DEF
+    400204: LB_R_Wrist_JNT
+    400206: LB_Root_ctrl_TOUCH_ME
+    400208: LB_Root_DEF_DO_NOT_TOUCH
+    400210: LB_Root_JNT_DO_NOT_TOUCH
+    400212: LB_Spine_DEF
+    400214: LB_Spine_JNT
     400216: Neck_ctrl
     400218: Neck_ctrl_grp
     400220: Pants
@@ -282,6 +282,13 @@ ModelImporter:
     4300016: HeadBand
     4300018: L_EyeBrow
     7400000: Walk
+    7400002: Run
+    7400004: Jump_UP_01
+    7400006: Jump_UP_02
+    7400008: Jump_Mid
+    7400010: Jump_DOWN
+    7400012: Jump_Ground
+    7400014: GroundPnd
     9500000: //RootNode
     13700000: Belt
     13700002: Body
@@ -304,10 +311,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
-      copied configuration does not match position in animation file:\n\t'LB_L_Hip_DEF'
-      : position error = 5.953283 mm\n\t'LB_R_Hip_DEF' : position error = 5.953279
-      mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar to
@@ -327,8 +331,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Walk
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 32
+      firstFrame: 2
+      lastFrame: 34
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -341,9 +345,205 @@ ModelImporter:
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 1
-      heightFromFeet: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 36
+      lastFrame: 53
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump_UP_01
+      takeName: Take 001
+      firstFrame: 55
+      lastFrame: 56
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump_UP_02
+      takeName: Take 001
+      firstFrame: 57
+      lastFrame: 58
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump_Mid
+      takeName: Take 001
+      firstFrame: 59
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump_DOWN
+      takeName: Take 001
+      firstFrame: 61
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump_Ground
+      takeName: Take 001
+      firstFrame: 63
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GroundPnd
+      takeName: Take 001
+      firstFrame: 65
+      lastFrame: 66
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []

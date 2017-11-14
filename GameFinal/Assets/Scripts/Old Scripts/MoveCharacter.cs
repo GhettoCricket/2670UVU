@@ -13,6 +13,7 @@ public class MoveCharacter : MonoBehaviour {
 	public static GameData.PlayerState State;
 
 
+
     void Start () {
 		cc = GetComponent<CharacterController>();
 		MoveInput.JumpAction = Jump;
@@ -29,6 +30,7 @@ public class MoveCharacter : MonoBehaviour {
 	void Jump() {
 		if ( jumpCount != 0)
 		{
+			
 			tempMove.y = GameData.Instance.jumpHeight;
 			jumpCount -= 1;
 		}	
