@@ -250,7 +250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 61090929}
   - component: {fileID: 61090930}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: GetData
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -602,7 +602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200346704}
   - component: {fileID: 200346702}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: RefPath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1667,7 +1667,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.1
+  m_Height: 0.0955
   m_Radius: 0.02
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -1896,8 +1896,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1426633754}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.15, y: 0.36, z: -0.01}
-  m_LocalScale: {x: 32.000053, y: 32, z: 32.000053}
+  m_LocalPosition: {x: -0.14246, y: 0.16, z: 0.02}
+  m_LocalScale: {x: 37.834164, y: 68.49575, z: 39.802944}
   m_Children: []
   m_Father: {fileID: 1400284302}
   m_RootOrder: 0

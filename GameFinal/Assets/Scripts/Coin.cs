@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour {
 	public GameObject coin;
 	void OnTriggerEnter(Collider other)
 	{
-		GameData.Instance.CoinCount += 1;
+		GameData.Instance.CoinCount += 10;
 		coin.SetActive(false);
 	}
 }
