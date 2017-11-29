@@ -49,5 +49,6 @@ public class GameData
 		DRAG,
 		BOOST,
 		GPOUND,
+		DEAD
 	}
 }

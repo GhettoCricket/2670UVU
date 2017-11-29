@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -57,6 +58,9 @@ public class MoveCharacter : MonoBehaviour {
 			State = GameData.PlayerState.RUN;
 			//StartCoroutine(GpoundWait());
 		}
+		if(GameData.Instance.health <= 0)
+			State = GameData.PlayerState.DEAD;
+		
 
 		switch(State)
 		{
@@ -72,6 +76,9 @@ public class MoveCharacter : MonoBehaviour {
 			break;
 			case GameData.PlayerState.GPOUND:
 			GameData.Instance.gravity = 6;
+			break;
+			case GameData.PlayerState.DEAD:
+			SceneManager.LoadScene("FinalScene");
 			break;
 		}
 	}
