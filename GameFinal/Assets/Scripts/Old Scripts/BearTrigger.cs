@@ -16,7 +16,8 @@ public class BearTrigger : MonoBehaviour {
 	void OnTriggerExit(Collider Cl)
 	{	
 		if(RunAway != null)
-		RunAway();	
+		RunAway();
+		print("IdlePos");	
 	}
 	void OnTriggerStay(Collider other)
 	{
