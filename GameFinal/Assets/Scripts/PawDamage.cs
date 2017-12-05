@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamagePlayer : MonoBehaviour {
+public class PawDamage : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		GameData.Instance.health -= .25f;
+		GameData.Instance.health -= .5f;
 		print("Damaged by " + other.name);
 	}
 }

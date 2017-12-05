@@ -5,7 +5,7 @@ using UnityEngine;
 public class L_EnemyBehavior : MonoBehaviour {
 
 public GameObject DestructedV;
-public float bounce = .5f;
+public static float bounce = .5f;
 
 	void OnTriggerEnter(Collider other)
 	{

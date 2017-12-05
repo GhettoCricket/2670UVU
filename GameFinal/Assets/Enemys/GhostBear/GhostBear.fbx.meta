@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 9d1d42750cb9b7244b817bfaf07d9228
+timeCreated: 1512497470
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Bear_Head_DEF
+    100002: Bear_Jaw
+    100004: Bear_Jaw 1
+    100006: Bear_Jaw_DEF
+    100008: Bear_L_Ear
+    100010: Bear_L_Elbow_DEF
+    100012: Bear_L_Eye
+    100014: Bear_L_Paw
+    100016: Bear_L_Paw 1
+    100018: Bear_L_Paw 2
+    100020: Bear_L_Paw_DEF
+    100022: Bear_L_Wrist_DEF
+    100024: Bear_R_Ear
+    100026: Bear_R_Elbow_DEF
+    100028: Bear_R_Eye
+    100030: Bear_R_Paw
+    100032: Bear_R_Paw_DEF
+    100034: Bear_R_Wrist_DEF
+    100036: Bear_Root_DEF
+    100038: BearClaws
+    100040: BearClaws 1
+    100042: BearHead
+    100044: Claw1
+    100046: Claw1 1
+    100048: Claw2
+    100050: Claw2 1
+    100052: Claw3
+    100054: Claw3 1
+    100056: Claw4
+    100058: Claw4 1
+    100060: //RootNode
+    100062: GhostBear
+    100064: Head
+    100066: LowerTeeth
+    100068: Maw
+    100070: Teeth
+    100072: Tooth
+    100074: Tooth1
+    100076: Tooth10
+    100078: Tooth11
+    100080: Tooth12
+    100082: Tooth13
+    100084: Tooth14
+    100086: Tooth15
+    100088: Tooth16
+    100090: Tooth17
+    100092: Tooth18
+    100094: Tooth19
+    100096: Tooth2
+    100098: Tooth20
+    100100: Tooth21
+    100102: Tooth22
+    100104: Tooth23
+    100106: Tooth24
+    100108: Tooth25
+    100110: Tooth3
+    100112: Tooth4
+    100114: Tooth5
+    100116: Tooth6
+    100118: Tooth7
+    100120: Tooth8
+    100122: Tooth9
+    400000: Bear_Head_DEF
+    400002: Bear_Jaw
+    400004: Bear_Jaw 1
+    400006: Bear_Jaw_DEF
+    400008: Bear_L_Ear
+    400010: Bear_L_Elbow_DEF
+    400012: Bear_L_Eye
+    400014: Bear_L_Paw
+    400016: Bear_L_Paw 1
+    400018: Bear_L_Paw 2
+    400020: Bear_L_Paw_DEF
+    400022: Bear_L_Wrist_DEF
+    400024: Bear_R_Ear
+    400026: Bear_R_Elbow_DEF
+    400028: Bear_R_Eye
+    400030: Bear_R_Paw
+    400032: Bear_R_Paw_DEF
+    400034: Bear_R_Wrist_DEF
+    400036: Bear_Root_DEF
+    400038: BearClaws
+    400040: BearClaws 1
+    400042: BearHead
+    400044: Claw1
+    400046: Claw1 1
+    400048: Claw2
+    400050: Claw2 1
+    400052: Claw3
+    400054: Claw3 1
+    400056: Claw4
+    400058: Claw4 1
+    400060: //RootNode
+    400062: GhostBear
+    400064: Head
+    400066: LowerTeeth
+    400068: Maw
+    400070: Teeth
+    400072: Tooth
+    400074: Tooth1
+    400076: Tooth10
+    400078: Tooth11
+    400080: Tooth12
+    400082: Tooth13
+    400084: Tooth14
+    400086: Tooth15
+    400088: Tooth16
+    400090: Tooth17
+    400092: Tooth18
+    400094: Tooth19
+    400096: Tooth2
+    400098: Tooth20
+    400100: Tooth21
+    400102: Tooth22
+    400104: Tooth23
+    400106: Tooth24
+    400108: Tooth25
+    400110: Tooth3
+    400112: Tooth4
+    400114: Tooth5
+    400116: Tooth6
+    400118: Tooth7
+    400120: Tooth8
+    400122: Tooth9
+    4300000: Head
+    4300002: Tooth
+    4300004: Tooth2
+    4300006: Tooth3
+    4300008: Tooth4
+    4300010: Tooth5
+    4300012: Tooth6
+    4300014: Tooth7
+    4300016: Tooth8
+    4300018: Tooth13
+    4300020: Tooth15
+    4300022: Tooth16
+    4300024: Tooth17
+    4300026: Tooth18
+    4300028: Tooth19
+    4300030: Tooth20
+    4300032: Tooth21
+    4300034: Bear_L_Eye
+    4300036: Bear_R_Eye
+    4300038: Bear_L_Ear
+    4300040: Bear_R_Ear
+    4300042: Bear_Jaw
+    4300044: Tooth11
+    4300046: Tooth10
+    4300048: Tooth23
+    4300050: Tooth24
+    4300052: Tooth1
+    4300054: Tooth9
+    4300056: Tooth12
+    4300058: Tooth14
+    4300060: Tooth22
+    4300062: Tooth25
+    4300064: Claw1
+    4300066: Claw2
+    4300068: Claw3
+    4300070: Claw4
+    4300072: Bear_L_Paw
+    4300074: Claw1
+    4300076: Claw2
+    4300078: Claw3
+    4300080: Claw4
+    4300082: Bear_L_Paw
+    7400000: GBIdle
+    7400002: LeftSwipe
+    7400004: DownSwipe
+    7400006: Damaged
+    9500000: //RootNode
+    13700000: Bear_Jaw 1
+    13700002: Bear_L_Ear
+    13700004: Bear_L_Eye
+    13700006: Bear_L_Paw 1
+    13700008: Bear_L_Paw 2
+    13700010: Bear_R_Ear
+    13700012: Bear_R_Eye
+    13700014: Claw1
+    13700016: Claw1 1
+    13700018: Claw2
+    13700020: Claw2 1
+    13700022: Claw3
+    13700024: Claw3 1
+    13700026: Claw4
+    13700028: Claw4 1
+    13700030: Head
+    13700032: Tooth
+    13700034: Tooth1
+    13700036: Tooth10
+    13700038: Tooth11
+    13700040: Tooth12
+    13700042: Tooth13
+    13700044: Tooth14
+    13700046: Tooth15
+    13700048: Tooth16
+    13700050: Tooth17
+    13700052: Tooth18
+    13700054: Tooth19
+    13700056: Tooth2
+    13700058: Tooth20
+    13700060: Tooth21
+    13700062: Tooth22
+    13700064: Tooth23
+    13700066: Tooth24
+    13700068: Tooth25
+    13700070: Tooth3
+    13700072: Tooth4
+    13700074: Tooth5
+    13700076: Tooth6
+    13700078: Tooth7
+    13700080: Tooth8
+    13700082: Tooth9
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: GBIdle
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 88
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LeftSwipe
+      takeName: Take 001
+      firstFrame: 89
+      lastFrame: 125
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DownSwipe
+      takeName: Take 001
+      firstFrame: 127
+      lastFrame: 192
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Damaged
+      takeName: Take 001
+      firstFrame: 194
+      lastFrame: 219
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
