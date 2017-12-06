@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 4798415348088738}
   - component: {fileID: 65240031682119336}
   - component: {fileID: 114652564572514654}
+  - component: {fileID: 82115178665921424}
   m_Layer: 14
   m_Name: EnemyDestroyer
   m_TagString: Untagged
@@ -429,6 +430,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4557757055554294}
   - component: {fileID: 95983090097182962}
+  - component: {fileID: 65834431385251032}
+  - component: {fileID: 114244068417959314}
   m_Layer: 13
   m_Name: SpiderWalk
   m_TagString: Untagged
@@ -530,11 +533,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4623724020882510}
   - component: {fileID: 33302107607442646}
-  - component: {fileID: 135593675916775080}
   - component: {fileID: 23189179363525666}
   - component: {fileID: 114087347087525288}
   - component: {fileID: 195392762242850950}
-  - component: {fileID: 114539647576166746}
   - component: {fileID: 135375774496058612}
   - component: {fileID: 114648573955653116}
   m_Layer: 13
@@ -958,8 +959,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1755589216281184}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.5, y: 60.05, z: 0.64003944}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 74.62505, y: 3.0591888, z: -55.58602}
   m_LocalScale: {x: 2.197528, y: 2.1975274, z: 2.1975274}
   m_Children:
   - {fileID: 4798415348088738}
@@ -2380,6 +2381,98 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.021150313, y: 0.01027596, z: 0.019658495}
   m_Center: {x: -0.00015276272, y: 0.003692925, z: 0.0045443363}
+--- !u!65 &65834431385251032
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1630582339359258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.7226763, y: 3.7493794, z: 2.8674672}
+  m_Center: {x: 2.3613453, y: 1.3746904, z: 0.059215665}
+--- !u!82 &82115178665921424
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1239088458842318}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f3686355ce52fc64f89b07da68e94939, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95983090097182962
 Animator:
   serializedVersion: 3
@@ -2410,15 +2503,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _destination: {fileID: 0}
   DistractedPos: {fileID: 0}
-  IdlePosition: {x: 34.41739, y: 59.55433, z: 0.6400394}
+  IdlePosition: {x: 74.62505, y: 3.059189, z: -55.58602}
   CanMove: 0
   _Distracted: 0
---- !u!114 &114539647576166746
+--- !u!114 &114244068417959314
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1755589216281184}
+  m_GameObject: {fileID: 1630582339359258}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 943e180c44899054c86d7fc448485693, type: 3}
@@ -2446,8 +2539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6b7e223bdb8ca41bfd92acd95191d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestructedV: {fileID: 1755589216281184}
-  bounce: 0.5
+  DestructedV: {fileID: 1630582339359258}
+  SoundDestroy: {fileID: 1755589216281184}
 --- !u!135 &135375774496058612
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -2460,18 +2553,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.61839616
   m_Center: {x: 0, y: -0.11839616, z: 0}
---- !u!135 &135593675916775080
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1755589216281184}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &195392762242850950
 NavMeshAgent:
   m_ObjectHideFlags: 1

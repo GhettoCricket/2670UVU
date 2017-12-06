@@ -10,6 +10,7 @@ public class AnimController : MonoBehaviour {
 	public static Animator animator;
 	private float Movefloat_X;
 	private float Movefloat_Y;
+
 	void Start () {
 		animator = GetComponent<Animator>();
 		MoveInput.KeyAction += Animate;

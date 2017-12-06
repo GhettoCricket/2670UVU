@@ -184,10 +184,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4311529225480774}
   - component: {fileID: 33805123856197972}
-  - component: {fileID: 135805988295944696}
   - component: {fileID: 23989186154125644}
   - component: {fileID: 114828145535212646}
-  - component: {fileID: 114053107545672934}
   - component: {fileID: 195149797701312666}
   - component: {fileID: 135188460339249880}
   - component: {fileID: 114200802096167006}
@@ -225,6 +223,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4399801280581390}
   - component: {fileID: 95035113089326256}
+  - component: {fileID: 65543453950150198}
+  - component: {fileID: 114371062798303442}
   m_Layer: 13
   m_Name: SpiderWalk
   m_TagString: Untagged
@@ -323,8 +323,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4352644857974850}
-  - component: {fileID: 65703704899364524}
   - component: {fileID: 114191994173297806}
+  - component: {fileID: 65453024793913990}
+  - component: {fileID: 82068989142746796}
   m_Layer: 14
   m_Name: EnemyDestroyer
   m_TagString: Untagged
@@ -836,8 +837,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1139968483428356}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.18, y: 59.554325, z: 0.64003944}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -47.694946, y: 20.853516, z: -53.278442}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4352644857974850}
@@ -2384,7 +2385,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65703704899364524
+--- !u!65 &65453024793913990
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2396,6 +2397,98 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.021150313, y: 0.01027596, z: 0.019658495}
   m_Center: {x: -0.00015276272, y: 0.003692925, z: 0.0045443363}
+--- !u!65 &65543453950150198
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171671254178576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.8657165, y: 4.051399, z: 3.004275}
+  m_Center: {x: 2.673596, y: 1.5293925, z: 0.04281337}
+--- !u!82 &82068989142746796
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1413226081200764}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f3686355ce52fc64f89b07da68e94939, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.85
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95035113089326256
 Animator:
   serializedVersion: 3
@@ -2413,17 +2506,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114053107545672934
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1139968483428356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 943e180c44899054c86d7fc448485693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114191994173297806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2435,7 +2517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74890e34770623949b688b828c8a6d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestructedV: {fileID: 1139968483428356}
+  DestructedV: {fileID: 1171671254178576}
+  SoundDestroy: {fileID: 1139968483428356}
 --- !u!114 &114200802096167006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2445,6 +2528,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34995861f6c9cd3409d110c68f275ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114371062798303442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171671254178576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943e180c44899054c86d7fc448485693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114828145535212646
@@ -2475,18 +2569,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.8025391
   m_Center: {x: 0, y: -0.24253917, z: 0}
---- !u!135 &135805988295944696
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1139968483428356}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &195149797701312666
 NavMeshAgent:
   m_ObjectHideFlags: 1
