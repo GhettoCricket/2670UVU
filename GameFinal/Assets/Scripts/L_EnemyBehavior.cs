@@ -9,11 +9,13 @@ public static float bounce = .5f;
 public GameObject SoundDestroy;
 private AudioSource Source;
 private bool hasPlayed = false;
+private ParticleSystem Blood;
 
 void Start()
 {
-	Source = GetComponent<AudioSource>()
-;}
+	Source = GetComponent<AudioSource>();
+	Blood = GetComponent<ParticleSystem>();
+}
 
 void OnTriggerEnter(Collider other)
 	{
@@ -23,6 +25,7 @@ void OnTriggerEnter(Collider other)
 		{
 			Source.Play();
 			hasPlayed = true;
+			Blood.Play();
 		}
 			DestructedV.SetActive(false);
 			GameData.Instance.CoinCount += 500;
