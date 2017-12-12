@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DamageBear : MonoBehaviour {
 
@@ -9,10 +10,13 @@ public class DamageBear : MonoBehaviour {
 	public int Bhealth = 3;
 	private bool canhurt = true;
 	public GameObject Bear;
+	private AudioSource Source;
+	public static Action BearDeth;
 
 	void Start()
 	{
 		animator = GetComponentInParent<Animator>();
+		Source = GetComponent<AudioSource>();
 	}
 	void OnTriggerEnter(Collider other)
 	{
@@ -21,6 +25,7 @@ public class DamageBear : MonoBehaviour {
 		else if (Bhealth <= 0)
 		{
 			Bear.SetActive(false);
+			BearDeth();
 			MoveCharacter.tempMove.y = boff;
 		}
 	}
@@ -32,6 +37,7 @@ public class DamageBear : MonoBehaviour {
 	{
 		canhurt = false;
 		animator.SetBool("isDamaged", true);
+		Source.Play();
 		MoveCharacter.tempMove.y = boff;
 		yield return new WaitForSeconds(2);
 		Bhealth -= 1;

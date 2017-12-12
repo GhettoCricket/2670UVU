@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class AwakeSound : MonoBehaviour {
 
@@ -10,6 +11,17 @@ public class AwakeSound : MonoBehaviour {
 	void Start () {
 		Source = GetComponent<AudioSource>();
 		Source.Play();
+		SndChnger.Soundoff += StopSound;
+	}
+
+	void StopSound()
+	{
+		Source.Stop();
+	}
+
+	void OnDisable()
+	{
+		SndChnger.Soundoff -= StopSound;
 	}
 	
 }
